@@ -6,7 +6,7 @@ HighTechU Group Project
 
 ### Mini Pitch :ghost:
 
-The website will help people stay focused all day.
+It helps the user keep track of tasks they have to do and assign a score at the EOD based on how they fared in doing their tasks.
 
 ### Problem Statment of the Group Project :mega:
 
