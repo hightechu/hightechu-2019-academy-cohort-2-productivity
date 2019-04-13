@@ -2,29 +2,31 @@
 
 HighTechU Group Project
 
-## [REPLACE ME WITH YOUR GROUP PROJECT NAME]
+## Productivity Calculator
 
 ### Mini Pitch :ghost:
 
-[DELETE ME - ADD YOUR PITCH HERE]
+The website will help people stay focused all day.
 
 ### Problem Statment of the Group Project :mega:
 
-[DELETE ME - ADD YOUR PROBLEM STATMEMENT HERE]
+People waste too much time during the day.
 
 ### User Stories :snowboarder:
 
-[DELETE ME - ADD YOUR USER STORIES HERE]
+4 Main User Stories:
+- A a User I should be able to signup or login - Kyunje
+- As a User, I should be able to navigate from the Main page - Lachalann
+- As a User, I should be able to create a schedule - Adel
+- As a User, I should be able to see the FAQ/About Us page - Jorge
 
-* EXAMPLE - I want my users to be able to see a default page on my website.
-* EXAMPLE - I want my users to be able to login to my website.
 
 ### Website Pages :speedboat:
 
-[DELETE ME - ADD YOUR WEBSITE PAGES HERE]
-
-* EXAMPLE - Landing Page -> `index.html`
-* EXAMPLE - Login Page -> `login.html`
+Login Page -> index.html
+Navigation page -> main.html
+Schedule page -> schedule.html
+Help page -> help.html
 
 ## Resources :blue_book:
 
