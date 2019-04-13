@@ -23,10 +23,12 @@ People waste too much time during the day.
 
 ### Website Pages :speedboat:
 
-Login Page -> index.html
-Navigation page -> main.html
-Schedule page -> schedule.html
-Help page -> help.html
+* Login Page -> index.html
+* Navigation page -> main.html
+  * Create schedule page -> schedule.html
+  * Help page -> help.html
+  * Load schedule page -> load.html
+  * Summary page -> summary.html
 
 ## Resources :blue_book:
 
