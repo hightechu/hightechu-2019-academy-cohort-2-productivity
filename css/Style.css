@@ -1,0 +1,62 @@
+html, body{
+    height: 80%;
+    background-color: #c8ecf8;
+}
+#main{
+    align-items: right;
+    font-family: Arial;
+    font-size: 15px;
+    width: 90px;
+    height: 40px;
+    margin: 18px;
+    border: #000000;
+    border-color: #00b7ff;
+    border-radius: 5%;
+}
+#title{
+    font-family: Arial;
+    color: #0093ce;
+    text-align: center;
+}
+#container{
+    font-family: Arial;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80%;
+    color: #00b7ff;
+}
+#left{
+    flex: 1;
+    border-right: #003366 3px solid;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 18%;
+}
+#left>div{
+    flex: 1;
+    height: 100%;
+}
+button{
+    font-family: Arial;
+    font-size: 15px;
+    width: 90px;
+    height: 40px;
+    margin: 18px;
+    color: #ffffff;
+    background-color: #00b7ff;
+    border: #000000;
+    border-color: #00b7ff;
+    border-radius: 5%;
+}
+#right{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#right>div{
+    flex: 1;
+    height: 100%;
+}
