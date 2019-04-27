@@ -1,0 +1,60 @@
+html {
+
+}
+
+h1{
+    color: rgb(0, 147, 206);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+
+    
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 28px;
+    color: rgb(0, 183, 255);
+}
+
+h3 {
+    color:rgb(0, 183, 255);
+}
+
+body {
+    color: rgb(0, 183, 255);
+    background-color:   rgb(200, 236, 248);
+}
+
+#list {
+    align-content: left;
+    border: solid black;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 100px;
+}
+
+#tasks {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    color:black;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  tr:nth-child(odd) {
+    background-color: #c2c1c1;
+  }
