@@ -1,24 +1,18 @@
-html {
-
-}
-
 h1{
     color: rgb(0, 147, 206);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
-
-    
 }
 
 h2 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 28px;
-    color: rgb(0, 183, 255);
+    color: rgb(0, 147, 206);
 }
 
 h3 {
-    color:rgb(0, 183, 255);
+    color:rgb(0, 147, 206);
 }
 
 body {
@@ -47,14 +41,29 @@ table {
     color:black;
   }
   
-  td, th {
+td, th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
   }
-  tr:nth-child(even) {
+
+tr:nth-child(even) {
     background-color: #dddddd;
   }
-  tr:nth-child(odd) {
+
+tr:nth-child(odd) {
     background-color: #c2c1c1;
+  }
+
+  .button {
+    background-color: rgb(0, 183, 255);
+    border: none;
+    color: rgb(200, 236, 248);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
   }
