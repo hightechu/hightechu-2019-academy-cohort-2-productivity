@@ -3,7 +3,7 @@ html, body{
     background-color: #c8ecf8;
 }
 #main{
-    text-align: right
+    text-align: right;
 }
 #title{
     font-family: Arial;
@@ -22,7 +22,7 @@ html, body{
 }
 #left{
     flex: 1;
-    border-right: #003366 3px solid;
+    border-right: #0093ce 3px solid;
     height: 100%;
     display: flex;
     align-items: center;
@@ -40,17 +40,23 @@ button{
     margin: 18px;
     color: #ffffff;
     background-color: #00b7ff;
-    border: #000000;
     border-color: #00b7ff;
     border-radius: 5%;
+    box-shadow: #fff
 }
 #right{
     flex: 1;
+    border-left: #003366 3px transparent;
     height: 100%;
     display: flex;
     align-items: center;
+    margin-left: -3%;
+    margin-right: 3%;
 }
 #right>div{
     flex: 1;
     height: 110%;
+}
+#text{
+    font-size: 20px;
 }
