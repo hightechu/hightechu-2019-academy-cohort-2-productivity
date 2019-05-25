@@ -1,0 +1,81 @@
+<!-- TELLS THE BROSWER -->
+<!doctype html>
+<!-- ENGLISH -->
+<html lang="en">
+<!-- HEAD -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login/Register</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" type="text/css" href="css/signin-register.css" />
+    <link rel="shox rtcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="js/signin-register.js"></script>
+</head>
+<!-- BODY -->
+
+<body>
+    <!-- ADD CONTENT HERE -->
+    <div id="main">
+        <a href="index_kyunje.html">
+            <button id="title3">Main</button>
+        </a>
+        <a href="help.html">
+            <button id="title3">Help</button>
+        </a>
+    </div>
+    <div id="title">
+        <h1>Sign Up / Log In</h1>
+    </div>
+    <br>
+    <div id="container">
+        <div id="left">
+            <div id="Signin">
+                <h2>Sign Up</h2>
+                <br>
+                <label id="title1">Username</label>
+                <br>
+                <input type="text" placeholder="Username (Optional)"  class="text" id="Username"/>
+                <br>
+                <br>
+                <label id="title1">Email</label>
+                <br>
+                <input type="text" placeholder="Example@gmail.com"  class="text" id="Email"/>
+                <br>
+                <br>
+                <label id="title1">Password</label>
+                <br>
+                <input type="password" placeholder="Password"  class="text" id="Password"/>
+                <br>
+                <br>
+                <label id="title1">Confirm Password</label>
+                <br>
+                <input type="password" placeholder="Confirm Password" class="text" id="ConfirmPassword"/>
+                <br>
+                <button id="Confirm" onclick="saveSignin()">Confirm</button>
+            </div>
+        </div>
+
+        <div id="right">
+            <div id="login">
+                <h2>Login</h2>
+                <br>
+                <label id="title1">Email</label>
+                <br>
+                <input type="text" placeholder="Email/Username"  class="text"/>
+                <br>
+                <br>
+                <label id="title1">Password</label>
+                <br>
+                <input type="password" placeholder="Password"  class="text"/>
+                <br>
+                <button id="Confirm">Confirm</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
