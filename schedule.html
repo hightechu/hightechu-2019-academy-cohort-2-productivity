@@ -24,7 +24,9 @@
   <!-- BODY -->
   <body>
     <!-- ADD CONTENT HERE -->
-    
+    <div class="rightalign">
+    <a href="index.html"><button class="smallbutton">Main</button></a>
+    </div>
     <h1>Create a schedule</h1>
     <br>
 
@@ -40,16 +42,24 @@
                 </div>
 
             <div id="buttons">
-                    <button type="button" class="button">Add Task</button>
-                    <button type="button" class="button">Edit Task</button>
+                    <button type="button" class="smallbutton">Add Task</button>
+                    <button type="button" class="smallbutton">Edit Task</button>
             </div>
                 <br>
                 <div id="list">
+                  <form>
+                    <p>Name of task</p>
+                    <input id="task_name" type = "text" value="">
                     <br>
-                    <p align="left">
-                        
-                    </p>
+                    <p>Start time</p>
+                    <input id="task_st" type="time" value = "0">
+                    <br>
+                    <p>End time</p>
+                    <input id="task_et" type="time">
+                    <br>
+                    </form>
                 </div>
+                <input class="smallbutton" type="submit" onClick="addTaskAJAX()">
             </div>
         </div>
 
@@ -63,100 +73,100 @@
                                   <th>Event</th>
                                 </tr>
                                 <tr>
+                                  <td>12am</td>
+                                  <td><div id="0"></div></td>
+                                </tr>
+                                <tr>
                                   <td>1am</td>
-                                  <td></td>
+                                  <td><div id="1"></div></td>
                                 </tr>
                                 <tr>
                                   <td>2am</td>
-                                  <td></td>
+                                  <td><div id="2"></div></td>
                                 </tr>
                                 <tr>
                                   <td>3am</td>
-                                  <td></td>
+                                  <td><div id="3"></div></td>
                                 </tr>
                                 <tr>
                                   <td>4am</td>
-                                  <td></td>
+                                  <td><div id="4"></div></td>
                                 </tr>
                                 <tr>
                                   <td>5am</td>
-                                  <td></td>
+                                  <td><div id="5"></div></td>
                                 </tr>
                                 <tr>
                                   <td>6am</td>
-                                  <td></td>
+                                  <td><div id="6"></div></td>
                                 </tr>
                                 <tr>
                                   <td>7am</td>
-                                  <td></td>
+                                  <td><div id="7"></div></td>
                                 </tr>
                                 <tr>
                                   <td>8am</td>
-                                  <td></td>
+                                  <td><div id="8"></div></td>
                                 </tr>
                                 <tr>
                                   <td>9am</td>
-                                  <td></td>
+                                  <td><div id="9"></div></td>
                                 </tr>
                                 <tr>
                                   <td>10am</td>
-                                  <td></td>
+                                  <td><div id="10"></div></td>
                                 </tr>
                                 <tr>
                                   <td>11am</td>
-                                  <td></td>
+                                  <td><div id="11"></div></td>
                                 </tr>
                                 <tr>
                                   <td>12pm</td>
-                                  <td></td>
+                                  <td><div id="12"></div></td>
                                 </tr>
                                 <tr>
                                   <td>1pm</td>
-                                  <td></td>
+                                  <td><div id="13"></div></td>
                                 </tr>
                                 <tr>
                                   <td>2pm</td>
-                                  <td></td>
+                                  <td><div id="14"></div></td>
                                 </tr>
                                 <tr>
                                   <td>3pm</td>
-                                  <td></td>
+                                  <td><div id="15"></div></td>
                                 </tr>
                                 <tr>
                                   <td>4pm</td>
-                                  <td></td>
+                                  <td><div id="16"></div></td>
                                 </tr>
                                 <tr>
                                   <td>5pm</td>
-                                  <td></td>
+                                  <td><div id="17"></div></td>
                                 </tr>
                                 <tr>
                                   <td>6pm</td>
-                                  <td></td>
+                                  <td><div id="18"></div></td>
                                 </tr>
                                 <tr>
                                   <td>7pm</td>
-                                  <td></td>
+                                  <td><div id="19"></div></td>
                                 </tr>
                                 <tr>
                                   <td>8pm</td>
-                                  <td></td>
+                                  <td><div id="20"></div></td>
                                 </tr>
                                 <tr>
                                   <td>9pm</td>
-                                  <td></td>
+                                  <td><div id="21"></div></td>
                                 </tr>
                                 <tr>
                                   <td>10pm</td>
-                                  <td></td>
+                                  <td><div id="22"></div></td>
                                 </tr>
                                 <tr>
                                   <td>11pm</td>
-                                  <td></td>
-                                </tr>
-                                <tr>
-                                  <td>12pm</td>
-                                  <td></td>
+                                  <td><div id="23"></div></td>
                                 </tr>
 
                               </table>
@@ -170,11 +180,17 @@
 
     </div>
 
+    <div>
+      <p align="center">
+        <br>
+        <button type="button" class="smallbutton" onClick="calculate()">Calculate</button>
+      </p>
+    </div>
     <!--Left Float-->
 
    
     <!-- JAVASCRIPT SCRIPT -->
     <!-- ADD JS FILES HERE -->
-    <script src="js/"></script>
+    <script src="js/schedule.js"></script>
   </body>
 </html>
