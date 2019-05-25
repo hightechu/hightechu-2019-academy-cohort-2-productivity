@@ -37,12 +37,12 @@
                 <br>
                 <label id="title1">Username</label>
                 <br>
-                <input type="text" placeholder="Username (Optional)"  class="text" id="Username"/>
+                <input type="text" placeholder="Username"  class="text" id="signinUsername"/>
                 <br>
                 <br>
                 <label id="title1">Email</label>
                 <br>
-                <input type="text" placeholder="Example@gmail.com"  class="text" id="Email"/>
+                <input type="text" placeholder="Example@gmail.com" onchange="checkEmailAddress()"  class="text" id="Email"/>
                 <br>
                 <br>
                 <label id="title1">Password</label>
@@ -52,7 +52,7 @@
                 <br>
                 <label id="title1">Confirm Password</label>
                 <br>
-                <input type="password" placeholder="Confirm Password" class="text" id="ConfirmPassword"/>
+                <input type="password" placeholder="Confirm Password" onchange="checkConfirmPassword()" class="text" id="ConfirmPassword"/>
                 <br>
                 <button id="Confirm" onclick="saveSignin()">Confirm</button>
             </div>
@@ -64,14 +64,14 @@
                 <br>
                 <label id="title1">Email</label>
                 <br>
-                <input type="text" placeholder="Email/Username"  class="text"/>
+                <input type="text" placeholder="Email/Username" id="Email/Username"  class="text"/>
                 <br>
                 <br>
                 <label id="title1">Password</label>
                 <br>
-                <input type="password" placeholder="Password"  class="text"/>
+                <input type="password" placeholder="LoginPassword" id="LoginPassword" class="text"/>
                 <br>
-                <button id="Confirm">Confirm</button>
+                <button id="Confirm" onclick="login()">Confirm</button>
             </div>
         </div>
     </div>
