@@ -64,11 +64,7 @@ function login(){
     
     //login variables
     var loginName = document.getElementById("Email/Username").value;
-    var loginPassword = document.getElementById("LoginPassword").value;
-
-    //emailId = document.getElementById("Email").value;
-    //username = document.getElementById("signinUsername").value;
-    //password = document.getElementById("Password").value;
+    var loginPassword = document.getElementById("loginPassword").value;
 
     if((loginName == username || loginName == emailId) && (loginPassword == password || loginPassword == confirmPassword)) {
         alert("yay");
