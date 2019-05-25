@@ -42,8 +42,8 @@
                 </div>
 
             <div id="buttons">
-                    <button type="button" class="smallbutton">Add Task</button>
-                    <button type="button" class="smallbutton">Edit Task</button>
+                    <a href="schedule.html"><button type="button" class="smallbutton">Add Task</button></a>
+                    <button type="button" class="smallbutton" onclick="deleteAllTasks()">Edit Task</button>
             </div>
                 <br>
                 <div id="list">
@@ -59,7 +59,7 @@
                     <br>
                     </form>
                 </div>
-                <input class="smallbutton" type="submit" onClick="addTaskAJAX()">
+                <a href="schedule.html"><button class="smallbutton" type="button" onClick="addTaskAJAX()">Submit</button></a>
             </div>
         </div>
 
@@ -183,7 +183,7 @@
     <div>
       <p align="center">
         <br>
-        <button type="button" class="smallbutton" onClick="calculate()">Calculate</button>
+        <a href="endday.html"><button type="button" class="smallbutton">End Day</button></a>
       </p>
     </div>
     <!--Left Float-->

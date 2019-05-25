@@ -47,7 +47,7 @@ function getTaskAJAX(filter, i) {
                 alert(response.error.message);
             }
             else {
-                document.getElementById(i).innerText = response[0].name
+                document.getElementById(i).innerText = response[0].name 
             }
         }
     }
@@ -56,8 +56,7 @@ function getTaskAJAX(filter, i) {
 }
 
 function calculate() {
-    console.log("Tested");
-    
+    console.log("Tested");  
 }
 
 for (const i of Array(24).keys()) {
@@ -67,3 +66,48 @@ for (const i of Array(24).keys()) {
         i_time = i
     getTaskAJAX("{\"where\":{\"start_time\":\""+ i_time +":00\"}}", i)
 }
+
+function deleteAllTasks(){
+    var location = "http://localhost:3000/api/tasks";
+
+    var http_request = new XMLHttpRequest();
+
+    http_request.onreadystatechange = function() {
+        if (http_request.readyState == 4  ) {
+            var response = JSON.parse(http_request.responseText);
+            if('error' in response) {
+                alert(response.error.message);
+            }
+            else {
+                for(const task of response) {
+                    deleteTask(task.id);
+                }
+            }
+        }
+    }
+    http_request.open("GET", location, true);
+    http_request.send();
+
+    
+}
+
+function deleteTask(id) {
+    var location = "http://localhost:3000/api/tasks/" + id.toString();
+
+    var http_request = new XMLHttpRequest();
+
+    http_request.onreadystatechange = function() {
+        if (http_request.readyState == 4  ) {
+            var response = JSON.parse(http_request.responseText);
+            if('error' in response) {
+                alert(response.error.message);
+            }
+            else {
+                console.log("Deleted task " + id.toString());
+            }
+        }
+    }
+    http_request.open("DELETE", location, true);
+    http_request.send();
+}
+
