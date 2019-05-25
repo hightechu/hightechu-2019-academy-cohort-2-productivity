@@ -7,16 +7,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- ADD TITLE -->
     <title>login/Register</title>
-    <!-- ADD DESCRIPTION -->
     <meta name="description" content="">
-    <!-- ADD AUTHOR -->
     <meta name="author" content="">
-    <!-- ADD CSS FILES HERE -->
-    <link rel="stylesheet" type="text/css" href="css/Login_Register.css" />
-    <!-- ADD FAVICON -->
+    <link rel="stylesheet" type="text/css" href="css/signin-register.css" />
     <link rel="shox rtcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="js/signin-register.js"></script>
 </head>
 <!-- BODY -->
 
@@ -24,10 +20,10 @@
     <!-- ADD CONTENT HERE -->
     <div id="main">
         <a href="index_kyunje.html">
-            <button id="text">Main</button>
+            <button id="title3">Main</button>
         </a>
         <a href="help.html">
-            <button id="text">Help</button>
+            <button id="title3">Help</button>
         </a>
     </div>
     <div id="title">
@@ -39,26 +35,26 @@
             <div id="Signin">
                 <h2>Sign Up</h2>
                 <br>
-                <label id="text">Username</label>
+                <label id="title1">Username</label>
                 <br>
-                <input type="text" placeholder="Username (Optional)"  id="text"/>
-                <br>
-                <br>
-                <label id="text">Email</label>
-                <br>
-                <input type="text" placeholder="Example@gmail.com"  id="text"/>
+                <input type="text" placeholder="Username (Optional)"  class="text" id="Username"/>
                 <br>
                 <br>
-                <label id="text">Password</label>
+                <label id="title1">Email</label>
                 <br>
-                <input type="password" placeholder="Password"  id="text"/>
+                <input type="text" placeholder="Example@gmail.com"  class="text" id="Email"/>
                 <br>
                 <br>
-                <label id="text">Confirm Password</label>
+                <label id="title1">Password</label>
                 <br>
-                <input type="password" placeholder="Confirm Password"  id="text"/>
+                <input type="password" placeholder="Password"  class="text" id="Password"/>
                 <br>
-                <button id="text">Confirm</button>
+                <br>
+                <label id="title1">Confirm Password</label>
+                <br>
+                <input type="password" placeholder="Confirm Password" class="text" id="ConfirmPassword"/>
+                <br>
+                <button id="Confirm" onclick="saveSignin()">Confirm</button>
             </div>
         </div>
 
@@ -66,23 +62,20 @@
             <div id="login">
                 <h2>Login</h2>
                 <br>
-                <label id="text">Email</label>
+                <label id="title1">Email</label>
                 <br>
-                <input type="text" placeholder="Email/Username"  id="text"/>
+                <input type="text" placeholder="Email/Username"  class="text"/>
                 <br>
                 <br>
-                <label id="text">Password</label>
+                <label id="title1">Password</label>
                 <br>
-                <input type="password" placeholder="Password"  id="text"/>
+                <input type="password" placeholder="Password"  class="text"/>
                 <br>
-                <button id="text">Confirm</button>
+                <button id="Confirm">Confirm</button>
             </div>
         </div>
     </div>
 
-    <!-- JAVASCRIPT SCRIPT -->
-    <!-- ADD JS FILES HERE -->
-    <script src="js/"></script>
 </body>
 
 </html>
