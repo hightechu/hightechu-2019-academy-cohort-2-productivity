@@ -18,11 +18,6 @@ function saveSignin(){
     var regex = /^(\w+@)([a-z]+)(\.)([a-z]{1,5})$/;
     var checkEmail = regex.test(emailId);
 
-    /*if(password != confirmPassword){
-        document.getElementById("ConfirmPassword").value = null;
-        document.getElementById("ConfirmPassword").placeholder = "The passwords do not match";
-    }*/
-
     if (checkEmail && (password == confirmPassword)) {
         alert("Signup successful");
     }
