@@ -50,60 +50,13 @@ function getTaskAJAX(filter, i) {
                 alert(response.error.message);
             }
             else {
-                console.log(response[0]);
                  document.getElementById(i).innerText = response[0].task_name;
+                 document.getElementById(i).insertAdjacentHTML("afterbegin", '<input type="checkbox" id="'+response[0].id+'" class="boxes">');
+                 console.log(document.getElementById(i).innerHTML);
             }
         }
     }
     http_request.open("GET", location, true);
-    http_request.send();
-}
-
-function calculate() {
-    console.log("Tested");  
-}
-
-function deleteAllTasks(){
-    var location = "http://localhost:3000/api/tasks";
-
-    var http_request = new XMLHttpRequest();
-
-    http_request.onreadystatechange = function() {
-        if (http_request.readyState == 4  ) {
-            var response = JSON.parse(http_request.responseText);
-            if('error' in response) {
-                alert(response.error.message);
-            }
-            else {
-                for(const task of response) {
-                    deleteTask(task.id);
-                }
-            }
-        }
-    }
-    http_request.open("GET", location, true);
-    http_request.send();
-
-    
-}
-
-function deleteTask(id) {
-    var location = "http://localhost:3000/api/tasks/" + id.toString();
-
-    var http_request = new XMLHttpRequest();
-
-    http_request.onreadystatechange = function() {
-        if (http_request.readyState == 4  ) {
-            var response = JSON.parse(http_request.responseText);
-            if('error' in response) {
-                alert(response.error.message);
-            }
-            else {
-                console.log("Deleted task " + id.toString());
-            }
-        }
-    }
-    http_request.open("DELETE", location, true);
     http_request.send();
 }
 
@@ -115,3 +68,23 @@ for (const i of Array(24).keys()) {
     getTaskAJAX("{\"where\":{\"task_st\":\""+ i_time +":00\"}}", i)
 }
 
+function calculate () {
+    var score = 0;
+    var num = 0;
+    var x = 0;
+    var y = 3;
+    
+    console.log(document.getElementsByClassName("boxes"));
+    var boxes = document.getElementsByClassName("boxes");
+    var checked = 0;
+    for (var i = 0, length = boxes.length; i<length; i++) {
+        if(boxes[i].checked === true) {
+            checked++;
+        }
+    }
+
+
+
+    alert(Math.round((checked/boxes.length)*100) + "%");
+
+}
