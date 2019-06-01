@@ -5,6 +5,7 @@ var emailId = "";
 var username = "";
 var password = "";
 var confirmPassword = "";
+document.cookie = "";
 
 
 
@@ -62,12 +63,12 @@ function login(){
     var loginPassword = document.getElementById("loginPassword").value;
 
     if((loginName == username || loginName == emailId) && (loginPassword == password || loginPassword == confirmPassword)) {
-        alert("yay");
+        alert("logged in");
     }
     
     else{
-        document.getElementById("Email/Username").placeholder = "Invalid Login Name.";
-        document.getElementById("LoginPassword").placeholder = "Invalid Login Pass."
+
+        alert("invalid login");
     }
 
 }
