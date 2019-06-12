@@ -33,7 +33,34 @@
     <div class="container">
 
         <div class="col-sm-6">
-            
+            <div class="row">
+                <div id="tasks">
+                    <h3>
+                        Task List
+                        <br>
+                    </h3>
+                </div>
+
+            <div id="buttons">
+                    <button type="button" class="smallbutton">Add Task</button>
+                    <button type="button" class="smallbutton" onclick="deleteAllTasks()">Delete Task</button>
+            </div>
+                <br>
+                <div id="list">
+                  <form>
+                    <p>Name of task</p>
+                    <input id="task_name" type = "text">
+                    <br>
+                    <p>Start time</p>
+                    <input id="task_st" type="time">
+                    <br>
+                    <p>End time</p>
+                    <input id="task_et" type="time">
+                    <br>
+                    </form>
+                </div>
+                <a href="schedule.html"><button class="smallbutton" type="button" onClick="addTaskAJAX()">Submit</button></a>
+            </div>
         </div>
 
         <div class="col-sm-6">
@@ -156,7 +183,7 @@
     <div>
       <p align="center">
         <br>
-        <button type="button" class="smallbutton" onClick="calculate()">Calculate</button>
+        <a href="endofday.html"><button class = "smallbutton">Calculate</button></a>
       </p>
     </div>
     <!--Left Float-->
@@ -164,6 +191,7 @@
    
     <!-- JAVASCRIPT SCRIPT -->
     <!-- ADD JS FILES HERE -->
-    <script src="js/checklist.js"></script>
+    <script src="js/helper.js"></script>
+    <script src="js/schedule.js"></script>
   </body>
 </html>
