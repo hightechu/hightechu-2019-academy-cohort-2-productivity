@@ -4,7 +4,7 @@
 
 ## Website
 
-https://hightechu-cohort2-group-aces.herokuapp.com
+https://productivitycalculator.herokuapp.com
 
 ## Mini Pitch
 
