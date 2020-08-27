@@ -4,7 +4,7 @@
 
 ## Website
 
-https://productivitycalculator.herokuapp.com
+[Live Demo](https://productivitycalculator.herokuapp.com)
 
 ## Mini Pitch
 
